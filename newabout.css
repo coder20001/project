@@ -1,0 +1,541 @@
+/* Reset default styling for consistency */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #10162A;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Logo */
+.navbar .logo img {
+    max-width: 300px; /* Adjust to fit your logo */
+    height: auto;
+    position: relative;
+}
+
+/* Middle Menu (Home, Services, About) */
+.navbar .middle-menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar .middle-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Adjust spacing between middle menu items */
+    margin-right: 200px;
+    padding: 0;
+}
+.navbar .middle-menu ul li {
+    display: inline;
+}
+.navbar a {
+    color: #ededed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #EDCD1F;
+    transition: 0.2s;
+}
+
+/* Right Menu (Login) */
+.navbar .right-menu {
+    text-align: right;
+}
+
+.navbar .right-menu ul {
+    list-style: none;
+    margin-right: 100px;
+    padding: 0;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('sam-clarke-ZEfFgaXVaV4-unsplash.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.team-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.team-section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 150px;
+   
+}
+
+.team-card {
+    background-color: #1f2a44;
+    color: white;
+    border-radius: 10px;
+    padding: 60px;
+    width: 250px;
+    text-align: center;
+    
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    margin-bottom: 10px;
+}
+
+.team-info h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;  
+    
+}
+.team-info h4 {
+   
+    margin-bottom: 15px ;
+}
+.team-info p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+
+/* Our Journey Section */
+.journey-timeline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 0px;
+    background-color: #EDE8F5;
+    height: 80vh;
+    width: 100%;
+}
+
+.journey {
+    background-color: #EDE8F5;
+    padding: 170px;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 8\em; /* Increase font size */
+    line-height: 1.4; /* Improve readability */
+}
+
+/* Timeline Image */
+.timelineimage {
+    width: 80%; /* Make the image container take half the section */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.timelineimage img {
+    width: 150%; /* Make image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10162A;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; /* Center text within the body */
+}
+
+
+.faq-container {
+    max-width: 1000px;
+    background-color: #EDE8F5;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 40px auto; /* Center horizontally */
+}
+
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            background-color:#EDE8F5; 
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid #384457; 
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            font-size: 22px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-item .answer {
+            margin-top: 10px;
+            display: none;
+            font-size: 16px;
+            color: black;
+        }
+
+        .faq-item.active .answer {
+            display: block;
+        }
+
+        .faq-item.active h3::after {
+            content: "▲";
+        }
+
+        h3::after {
+            content: "▼";
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .faq-container img {
+            width: 300px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+/* Contact Section */
+.contact-container {
+    max-width: 2000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-form {
+    background-color: #e6e1f1;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form h3 {
+    font-size: 18px;
+    color: #4b77be;
+    margin-bottom: 0px;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 20px 0;
+}
+
+.contact-info i {
+    color: #4b77be;
+    margin-right: 10px;
+}
+
+.w3-input, .w3-select, .w3-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 60px;
+    border: 1px solid #ccc;
+}
+
+.w3-blue{
+
+    background-color: #EDCD1F;
+    padding: 10px 20px;
+    color: #10162A;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.w3-blue:hover {
+    background-color: #C18D00;
+    transition: 0.3s;
+}
+
+
+
+
+.team-row {
+    display: flex;
+    justify-content: center; /* Center items in the row */
+    gap: 20px; /* Spacing between team cards */
+    margin-bottom: 30px; /* Spacing between rows */
+    
+}
+
+.team-card {
+    background-color: #EDE8F5;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width */
+    text-align: center;
+}
+
+/*removing the arrows next to our names*/
+.team-info h3::before,
+.team-info h3::after {
+    content: none; /* Ensure no arrows or icons are added */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center cards */
+    }
+
+    .team-card {
+        width: 150%; /* Adjust width on smaller screens */
+    }
+}
+.team-cards {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center rows */
+}
+
+.team-row {
+    display: flex;
+    justify-content: center; /* Center items in the row */
+    gap: 0px; /* Spacing between team cards */
+    margin-bottom: 100px; /* Spacing between rows */
+    margin-top: 40px ;
+    width: 100%;
+    height: 30vh;
+}
+
+.team-card {
+    background-color: #1f2a44;
+    color: white;
+    border-radius: 10px;
+    padding:70px 10px 60px; /* Extra padding on top for image space */
+    width: 200px; /* Fixed width */
+    text-align: center;
+    position:relative; /* For positioning the image */
+    
+}
+
+.team-image {
+    position: absolute; /* Allow it to "dangle" */
+    top: -90px; /* Adjust based on how much you want it to dangle */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    overflow: hidden; /* Clip overflow */
+}
+
+.team-image img {
+    width: 150px; /* Set desired width */
+    height: 150px; /* Set desired height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for effect */
+}
+
+
+
+.team-row {
+    display: flex;
+    justify-content:baseline;
+    gap: 130px;
+    margin-top: 5%;
+   
+}
+
+.team-card {
+    text-align: center;
+    width: 200px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #131313; /* Darker background color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.follow-us {
+    font-size: 22px;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #EDCD1F; /* Color change on hover */
+}
+
+footer .footer-text {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+footer .footer-text p {
+    margin: 5px 0;
+}
+.social-icons a {
+    color: white; /* Default color */
+    margin: 0 5px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust icon size */
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+/* Remove arrows from any elements if they exist */
+h3::before, h3::after, h2::before, h2::after {
+    content: none !important; /* Ensure no arrows are added */
+}
+
+/* Remove arrows from any elements if they exist */
+h3::before, h3::after, h2::before, h2::after {
+    content: none !important; /* Ensure no arrows are added */
+}
+
+/* Remove arrows from any elements if they exist */
+h3::before, h3::after, h2::before, h2::after {
+    content: none !important; /* Ensure no arrows are added */
+}
+
+/* Remove arrows from any elements if they exist */
+h3::before, h3::after, h2::before, h2::after {
+    content: none !important; /* Ensure no arrows are added */
+}
+
+/* Ensure dropdown arrows are not displayed on form select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none; /* Remove any arrow background */
+}
+/* For the entire container that holds the headings */
+.follow-us  {
+    list-style-type: none; /* Disable any automatic list style, which can add arrows */
+}
+
+/* Ensure form select dropdown isn't adding an arrow */
+.w3-select {
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc; /* Ensure no arrows inside dropdown */
+}
+
+
+/* For the entire container that holds the headings */
+.follow-us h3 {
+    list-style-type: none; /* Disable any automatic list style, which can add arrows */
+}
+
+/* Ensure form select dropdown isn't adding an arrow */
+.w3-select {
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc; /* Ensure no arrows inside dropdown */
+}
+
+
+
+

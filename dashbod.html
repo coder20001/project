@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Filters</h2>
+            <ul>
+                <li><a href="#filter1">Filter 1</a></li>
+                <li><a href="#filter2">Filter 2</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="metrics">
+                <h2>Key Metrics</h2>
+                <div class="metric">Metric 1: <span id="metric1">Value</span></div>
+                <div class="metric">Metric 2: <span id="metric2">Value</span></div>
+            </section>
+
+            <section class="charts">
+                <h2>Data Visualizations</h2>
+                <canvas id="myChart"></canvas>
+                <!-- Add more charts as needed -->
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

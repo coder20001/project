@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The House Hub</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    
+        <!-- Middle Menu (Home, Services, About) -->
+        <nav class="middle-menu">
+            <ul>
+                <li><a href="HomePage.html" class="<?php if(basename($_SERVER['PHP_SELF']) == 'index.php') { echo 'active'; } ?>">Home</a></li>
+                <li><a href="servicepage.html" class="<?php if(basename($_SERVER['PHP_SELF']) == 'services.php') { echo 'active'; } ?>">Services</a></li>
+                <li><a href="newabout.html" class="<?php if(basename($_SERVER['PHP_SELF']) == 'about.php') { echo 'active'; } ?>">About</a></li>
+                <li><a href="dashboard.php" class="<?php if(basename($_SERVER['PHP_SELF']) == 'dashboard.php') { echo 'active'; } ?>">Dashboard</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Right Menu (Login) -->
+        <nav class="right-menu">
+            <ul>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="hpbgimg.jpg" alt="background" class="background">
+        <div class="shadow"></div>
+        <div class="hero-text">
+            <h1>Your Residence, Our Priority:</h1>
+            <p>Seamless Maintenance at Your Fingertips</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+<section class="report-section">
+    <h2>What can I report?</h2>
+    <div class="services">
+        <div class="service">
+            <img src="plumber.png" alt="Plumbing Service">
+            <div class="service-info">
+                <h3>Plumbing</h3>
+                <p>Report any plumbing-related issues in your property. This includes leaks, broken pipes, clogged drains, and more.</p>
+                
+            </div>
+        </div>
+        <div class="service">
+            <img src="electrician.png" alt="Electrical Service">
+            <div class="service-info">
+                <h3>Electrical</h3>
+                <p>Report any electrical problems such as power outages, faulty wiring, and electrical appliance issues.</p>
+               
+            </div>
+        </div>
+        <div class="service">
+            <img src="infrastructure.png" alt="Infrastructure Service">
+            <div class="service-info">
+                <h3>Infrastructure</h3>
+                <p>Report structural issues in your building, such as cracks, leaks, or damaged roofing.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>The House Hub is a residence maintenance system that simplifies the management of maintenance tasks for residential properties. We provide a comprehensive tool that makes it easier for students and University staff to manage repairs and services.</p>
+                <br><br>
+                <a href="newabout.html" class="about-btn">Read more</a>
+            </div>
+            <div class="about-image">
+                <img src="about.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+        </div>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>COPYRIGHT © 2024 THE HOUSE HUB. ALL RIGHTS RESERVED.</p>
+            <p>Follow us on social media for updates and news about our services!</p>
+        </div>
+    </footer>
+    <script>
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });  
+         }
+    </script>
+</body>
+</html>

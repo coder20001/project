@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    
+    padding: 0px;
+    color: #EDE8F5; 
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+
+}
+
+#header-image {
+    width: 300px; /* Ensure the image scales down if necessary */
+    height: auto; /* Maintain the image aspect ratio */
+    margin-right: auto;
+    position: relative;
+   
+    
+}
+header h1{
+    color:#EDE8F5;
+    margin-right: 800px;
+  
+}
+
+
+body {
+    background-color: #EDE8F5;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+body {
+    background-color: #10162A;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Lora', serif;
+  }
+
+form {
+  margin: 0 auto;
+  width: 800px;
+color: black;
+  background-color: #EDE8F5;
+  padding: 0;
+  font-family: 'Lora', serif;
+  height: 815px;
+  
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.feedback-box {
+    background-color: #EDE8F5; /* White Center */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.check-icon {
+   
+    width: 60px;
+    height: 60px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.done-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #EDCD1F;
+    border-radius: 9px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    
+    
+}
+
+.done-button:hover {
+    background-color: #C18D00; /* Darker Blue on Hover */
+}

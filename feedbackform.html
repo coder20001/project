@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Hub Form</title>
+<link rel="stylesheet" href="feedbackform.css">
+<style>
+ body {
+      background-color: #10162A;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      height: 100vh;
+      font-family: 'Lora', serif;
+    }
+ 
+ 
+</style>
+</head>
+<body>
+  <body>
+ 
+
+    <header>
+        <img src="ll.png" alt="Centered Image" id="header-image"> 
+        <h1>Form Submitted</h1>
+       
+    </header>
+
+<form action="studentview.php" method="POST" enctype="multipart/form-data">
+    <div class="container">
+        <div class="feedback-box">
+            <div class="icon-container">
+               <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="11" stroke="black" stroke-width="1" fill="none"/>
+                    <path d="M8 12l2 2 4-4" stroke="black" stroke-width="2" fill="none"/>
+                </svg></div>
+            <p>Your form has been submitted</p>
+            <button class="done-button" onclick="document.location='studentview.php'">Done</button>
+          
+        </div>
+</form>
+
+
+
+</body>
+
+</html>

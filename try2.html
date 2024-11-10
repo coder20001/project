@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Clicked Button</title>
+</head>
+<body>
+
+    <h1>Last Clicked Button</h1>
+    <div id="statusDisplay"></div>
+
+    <script>
+        // Retrieve the last clicked status from localStorage
+        const lastClicked = localStorage.getItem('lastClicked');
+
+        // Display the last clicked button
+        const displayDiv = document.getElementById('statusDisplay');
+        if (lastClicked) {
+            displayDiv.innerText = `The last clicked button was: ${lastClicked}`;
+        } else {
+            displayDiv.innerText = 'No button has been clicked yet.';
+        }
+    </script>
+</body>
+</html>

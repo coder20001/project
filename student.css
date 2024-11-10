@@ -1,0 +1,345 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input::placeholder {
+    color: white; /* Change the color of the placeholder */
+    font-size: 14px; /* Change the size of the placeholder text */
+    opacity: 1; /* Adjusts the opacity, 1 is fully opaque */
+}
+
+/* For textarea */
+textarea::placeholder {
+    color:white;
+    font-size: 14px;
+    opacity: 1;
+}
+/* Body and HTML to ensure full height */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container to take up the full viewport */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+ .form {
+    background-color: rgba(61, 65, 79, 1);
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    gap: 15px;
+}
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    filter: contrast(60%);
+    opacity: 0.6;
+}
+
+.log img {
+    width: 80%;  /* Adjust the percentage to control how large the logo is relative to its container */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 300px;  /* Ensure the image does not get too large */
+    margin-bottom: 30px;  /* Add space beneath the logo */
+}
+h1{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+}
+
+
+/* h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+} */
+ .floating-label {
+      position: relative;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+ .floating-label input {
+      width: 100%;
+      padding: 12px 10px 12px 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      background: transparent;
+      border-radius: 9px;
+      outline: none;
+    }
+.floating-label:hover{
+    background-color:rgba(61, 65, 79, 1) /* Highlight color on hover */
+}
+    .floating-label label {
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      color: #fff;
+      background: transparent;
+      transition: 0.2s ease all;
+      pointer-events: none;
+      font-size: 16px;
+    }
+.floating-label i{
+    position: absolute;
+    top: 42%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 11px;
+}
+    .floating-label input:focus + label,
+    .floating-label input:not(:placeholder-shown) + label {
+      top: -8px;
+      left: 8px;
+      font-size: 12px;
+    color: #ffcc00;
+    background-color: rgba(61, 65, 79, 1);
+    }
+.fields{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #3d414f; /* Match the form background */
+     background: transparent; 
+    color: #fff; /* White text for the select box */
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    font-size: 16px;
+    outline: none;
+    background-image: url('data:image/svg+xml;charset=UTF8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+} 
+select {
+    width: 100%; /* Full width like the input fields */
+    padding: 10px; /* Similar padding to the input fields */
+    border: 2px solid #ccc; /* Same border as input fields */
+    border-radius: 9px; /* Rounded corners to match input fields */
+    font-size: 16px; /* Font size to match input */
+    color: #fff ;/* Text color */
+    background-color:  rgba(61, 65, 79, 1); /* Background color */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's width and height */
+}
+
+select:focus {
+    border-color: #fff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.floating-label select {
+    width: 100%; /* Ensure select is the full width within a floating label */
+}
+.fields option {
+    background-color: #3d414f; /* Dark background for dropdown */
+    color: #fff; /*White text for options */
+    padding: 10px;
+}
+
+.fields option:hover {
+    background-color: #ffcc00; /* Highlight color on hover */
+    color: #000; /* Black text for better visibility */
+}
+
+.fields select:focus {
+    border-color: #ffcc00;
+}
+    /* Button styling similar to register page */
+.sign {
+/* display: block; */
+    background-color: #ffcc00;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+ .sign:hover {
+    background-color: #ffd633;
+}
+
+input:focus {
+color: #fff; 
+  }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+/* Picture Section */
+.picture {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.picture .image {
+    width: 100%;
+    height: 100%;
+}
+
+.picture .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.focus-text {
+    position: absolute;
+    width: 80%;
+    top: 75%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.focus-text h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.focus-text p {
+    font-size: 18px;
+}
+
+.new-here {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.new-here a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.new-here a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form, .picture {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .focus-text {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .focus-text h2 {
+        font-size: 20px;
+    }
+
+    .focus-text p {
+        font-size: 16px;
+    }
+}
+/* .success-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.success-container h1 {
+    color: #4CAF50;
+}
+
+.success-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.success-container a:hover {
+    text-decoration: underline;
+}
+
+ .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px; 
+    filter: contrast(60%);
+    opacity: 0.6; 
+}
+
+.logo img {
+     width: 250px;  
+    height: auto; 
+    max-width: 300px;  
+}
+.good {
+    font-size: 16px;
+    color: #ddd;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 70px;
+  }
+  
+  .check {
+     text-align: center;
+     margin-bottom: 50px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  
+  .check i {
+    color: #ffcc00;
+  font-size: 3rem;
+   /*  color: #ffcc00;
+    font-size: 50px;  
+  } 
+  /* Error and success message styles 
+  .error {
+    color: lightcoral; 
+    font-size: 12px;
+    display: none;
+}
+
+.show-error {
+    display: block;
+} */
+
